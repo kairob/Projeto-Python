@@ -1,16 +1,19 @@
-from flask  import Flask ,render_template
+from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
-@app.route('/') 
-def homepage ():
-    return render_template('homepage.html')
-@app.route('/perfil')
-def perfil():
-    return 'This is the/perfil page.'    ,
-@app.route('/contato')
-def contato():
-    return 'This is the contato page.'  
+
+
+# Define a simple route
+
+@app.route('/')
+def home():
+    return 'Hello, World!'
+
+
+
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+

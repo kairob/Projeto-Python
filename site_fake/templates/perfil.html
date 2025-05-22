@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Perfil do Usuário</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-</head>
-<body>
-   <h1>Perfil {{usuario}} </h1>
-   <a href="{{url_for('homepage')}}">Voltar para a página inicial</a>
-   
-</body>
-</html>
+
+
+
+{% extends "homepage.html" %}
+
+
+{% block title %}
+    FakePintrest {{usuario}}
+{% endblock %}
+
+{% block body %}
+    <h1>perfil {{usuario}}</h1>
+{% endblock %}
+
+
+
+
+

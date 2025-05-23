@@ -1,7 +1,7 @@
 
-from Fakepinterest import app
 
 
+from fakepinterest import app
 
 
    

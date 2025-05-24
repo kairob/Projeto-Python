@@ -12,6 +12,6 @@ class Usuario(database.Model):
 class Foto(database.Model):
     id = database.Column(database.Integer, primary_key=True)
     imagem = database.Column(database.String(200),default='default.png') 
-data_de_criação = database.Column(database.DateTime, nullable=False,default=datetime.utcnow)
-id_usuario = database.Column(database.Integer, database.ForeignKey('usuario.id'), nullable=False)
+    data_de_criação = database.Column(database.DateTime, nullable=False,default=datetime.utcnow)
+    id_usuario = database.Column(database.Integer, database.ForeignKey('usuario.id'), nullable=False)
 

@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 #banco de dados
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///comunidade.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///comunidade1.db'
 database = SQLAlchemy(app)
 
 
